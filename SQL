@@ -1,0 +1,13 @@
+--create user 用户名 identified by 口令;
+CREATE USER test IDENTIFIED BY 1234;
+select username from all_users;
+
+--给用户分配权限
+--GRANT CONNECT, RESOURCE TO 用户名;
+--GRANT SELECT ON 表名 TO 用户名;
+--GRANT SELECT, INSERT, DELETE ON 表名 TO 用户名1， 用户名2;
+--DROP USER test CASCADE;
+--回收权利
+--REVOKE CONNECT, RESOURCE FROM JASON;
+--修改用户名密码
+--ALTER USER JASON IDENTIFIED BY ABC123;
